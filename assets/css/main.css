@@ -1,0 +1,277 @@
+/* global style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.input-style {
+    padding-inline: 1rem;
+    padding-block: 0.75rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.input-style:focus {
+    outline: none;
+}
+
+.btn {
+    padding-inline: 1rem;
+    padding-block: .75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: .75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-white {
+    background-color: white;
+}
+
+.btn-red {
+    background-color: #EB5A3C;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.btn-red:hover {
+    background-color: #942812;
+}
+
+.btn-outline-red {
+    border: 1px solid #EB5A3C;
+    color: #EB5A3C;
+    background-color: inherit;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline-red:hover {
+    background-color: #EB5A3C;
+    color: white;
+}
+
+.btn-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+h1 {
+    font-size: 2.98rem;
+}
+
+h2 {
+    font-size: 2.48rem;
+}
+
+h3 {
+    font-size: 2.07rem;
+}
+
+h4 {
+    font-size: 1.72rem;
+}
+
+h5 {
+    font-size: 1.44rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+.table-style {
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+    margin-inline: 2rem;
+}
+
+.table-style thead tr {
+    background-color: #EB5A3C;
+    color: white;
+    text-align: left;
+}
+
+.table-style tr th, td {
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.table-style tbody tr:nth-of-type(even) {
+    background-color: rgb(248, 248, 248);
+}
+
+.table-style tbody tr:last-of-type {
+    border-bottom: 2px solid #EB5A3C;
+}
+
+/* navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin-inline-start: 250px;
+    padding-inline: 2rem;
+    background-color: #EB5A3C;
+    color: white;
+    transition: all ease .5s;
+}
+
+#navbar.slide {
+    margin-inline-start: 80px;
+}
+
+.navbar-left-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#navbar .navbar-left-content .search i {
+    font-size: 0.833rem;
+}
+
+#navbar .navbar-left-content i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#navbar .profile {
+    cursor: pointer;
+}
+
+#navbar .profile img {
+    width: 50px;
+    border-radius: 999px;
+}
+
+/* sidebar style */
+#sidebar .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    transition: width .3s ease;
+    overflow: hidden;
+}
+
+#sidebar .container.hidden {
+    width: 80px;
+    transition: width .3s ease;
+}
+
+#sidebar .container.hidden .sidebar-list span {
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+#sidebar .sidebar-title h6 {
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-main .sidebar-header span {
+    line-height: 2rem;
+    font-size: 0.833rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    color: grey;
+}
+
+.sidebar-list {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: grey;
+    padding-block: 1rem;
+    padding-inline: 0.75rem;
+    border-radius: 5px;
+}
+
+.sidebar-list span {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.sidebar-list:hover {
+    background-color: #EB5A3C;
+    color: white;
+}
+
+.sidebar-list.active {
+    color: #EB5A3C;
+}
+
+.sidebar-list.active:hover {
+    color: white;
+}
+
+.sidebar-list i {
+    font-size: 1.44rem;
+}
+
+/* main style */
+#main .container {
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 250px;
+    gap: 2rem;
+    transition: all .3s ease-out;
+}
+
+#main .container.slide {
+    margin-inline-start: 80px;
+    transition: all .3s ease-in;
+}
+
+#main header {
+    padding-block: 1.5rem;
+    padding-inline: 2rem;
+    display: flex;
+    gap: 0.25rem;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+}
+
+#main header span.active {
+    color: #EB5A3C;
+    font-weight: bold;
+}
+
+#main header span {
+    color: grey;
+    cursor: pointer;
+}
+

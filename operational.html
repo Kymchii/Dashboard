@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- my style -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- icon -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="navbar-left-content">
+                <i class="bi bi-list sidebar-button"></i>
+                <div class="search">
+                    <input type="search" placeholder="Search" class="input-style">
+                    <button class="btn btn-white" type="submit"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="assets/image/profile.jpg" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="sidebar">
+            <div class="container">
+                <div class="sidebar-title">
+                    <h6>UMKM XYZ</h6>
+                </div>
+                <div class="sidebar-main">
+                    <div class="sidebar-header">
+                        <span>MENU</span>
+                    </div>
+                    <div class="sidebar-content">
+                        <a href="index.html" class="sidebar-list">
+                            <i class="bi bi-person-fill"></i>
+                            <span>User</span>
+                        </a>
+                        <a href="#" class="sidebar-list">
+                            <i class="bi bi-house-lock-fill"></i>
+                            <span>Owner</span>
+                        </a>
+                        <a href="admin.html" class="sidebar-list">
+                            <i class="bi bi-person-badge-fill"></i>
+                            <span>Admin</span>
+                        </a>
+                        <a href="operational.html" class="sidebar-list">
+                            <i class="bi bi-door-open-fill"></i>
+                            <span>Operasional</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="container">
+                <header>
+                    <span class="active">Dashboard</span><span>/</span><span>Admin</span>
+                </header>
+                <table class="table-style">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Waktu Pengerjaan</th>
+                            <th>Detail Order</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1 Day</td>
+                            <td>Value</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-sm btn-red" type="submit"><i class="bi bi-plus-lg"></i></button>
+                                    <button class="btn-sm btn-red" type="submit"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn-sm btn-red" type="submit"><i class="bi bi-eye-fill"></i></button>
+                                    <button class="btn-sm btn-outline-red" type="submit"><i class="bi bi-trash3-fill"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2 Day</td>
+                            <td>Value</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-sm btn-red" type="submit"><i class="bi bi-plus-lg"></i></button>
+                                    <button class="btn-sm btn-red" type="submit"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn-sm btn-red" type="submit"><i class="bi bi-eye-fill"></i></button>
+                                    <button class="btn-sm btn-outline-red" type="submit"><i class="bi bi-trash3-fill"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>3 Day</td>
+                            <td>Value</td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn-sm btn-red" type="submit"><i class="bi bi-plus-lg"></i></button>
+                                    <button class="btn-sm btn-red" type="submit"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn-sm btn-red" type="submit"><i class="bi bi-eye-fill"></i></button>
+                                    <button class="btn-sm btn-outline-red" type="submit"><i class="bi bi-trash3-fill"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
